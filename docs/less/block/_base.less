@@ -51,16 +51,15 @@ button {
 }
 .page-button {
     @media (min-width: 1200px) {         
-        height: 64px;        
+        height: 64px; 
+        line-height: 64px;       
         padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 12px;
+        padding-right: 40px;        
         border-radius: 30px;
         color: #000;
         font-family: 'M PLUS 1p', sans-serif;
         font-size: 22px;
-        font-weight: 700;
-        line-height: 1,2;
+        font-weight: 700;             
         transition: background-color 0.2s ease;
     }
 }
@@ -86,12 +85,13 @@ button {
     &::after {
        display: block;
        content: "";
-        width: calc(~"100% + 5px");
-        position: absolute;
-        border-bottom: 10px solid #fbdc4d;
-        margin-top: -15px;
-        z-index: -1;
-        opacity: 0.5;
+       height: 12px;
+       left: -7px;
+       right: -7px;
+       background-color: #fbdc4d;
+       bottom: 10px;        
+       position: absolute;      
+       z-index: -1;       
     }     
 }  
 #overlay {
@@ -107,6 +107,34 @@ button {
 #overlay.active {
     display: block;
 }
+.title-2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+        font-size: 52px;  
+        margin-bottom: 45px;     
+    } 
+    @media (min-width: 1200px) {
+        font-size: 64px; 
+        margin-bottom: 55px;        
+    }
+}
+.title-4 {
+    font-size: 22px;    
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 32px;
+    }
+}
+
 
 /*.title-1 {
     font-weight: 800;

@@ -2,7 +2,9 @@
     max-width: 1400px;
     width: 100%;      
     position: relative;    
-    margin-bottom: 40px;    
+    margin-bottom: 30px; 
+    padding-left: 17px;   
+    padding-right: 28px;
     margin-left: auto;
     margin-right: auto; 
     display: flex;     
@@ -23,17 +25,20 @@
         margin-bottom: 150px;
      }       
  }
+ 
  .logo {           
      font-size: 42px;
      color: #000;  
      line-height: 1.2;     
      font-weight: 800; 
      overflow: hidden;
-     text-align: center;
+     text-align: center;  
+     &:hover {
+        color: yellowgreen;
+    }  
 
     &::before {
         display: none;
-
         @media (min-width: 1200px) {
         display: block;
         position: absolute;
@@ -45,8 +50,9 @@
         left: 50px;
         transform: rotate(45deg);
         }
-    }       
- }  
+    }        
+ }     
+ 
  .header-link {
     margin-bottom: 10px;   
     

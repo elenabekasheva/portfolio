@@ -42,7 +42,7 @@
                     <h1 class="header-name"><span class="colortext">Елена</span><span class="colortext">Бекашева</span></h1>
                     <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
                     <form class="header-button">
-                        <a href="#" class="page-button button-color">Познакомиться</a> 
+                        <a href="#what" class="page-button button-color">Познакомиться</a> 
                         <a href="#cont" class="page-button button-press">Контакты</a> 
                     </form>
                 </div>
@@ -55,7 +55,7 @@
         <div class="container">
             <div class="header-details">
                 <div class="header-details__skills">
-                    <h3 class="details__title">Что я умею:</h3>
+                    <h3 id="what" class="details__title">Что я умею:</h3>
                     <ul class="skills">
                         <li class="skills__item">Рixel perfect, полное соответствие макету.</li> 
                         <li class="skills__item">Верстаю с сеткой или без.</li> 
@@ -63,7 +63,7 @@
                         <li class="skills__item">Оптимизация под retina экраны</li> 
                         <li class="skills__item">С Bootstrap и без него.</li>
                     </ul>  
-                    <a href="#work" class="page-button button-color">Смотреть работы</a>   
+                    <a href="#portfolio-projects" class="page-button button-color">Смотреть работы</a>   
                 </div>
                 <div class="header-details__connection">
                     <h3 class="details__title">На связи:</h3>
@@ -74,25 +74,82 @@
                        
                             
                             <a class="block-icons telegram" href="#">
-                                <i class="fab fa-telegram"></i></a>
-                       
-                        <div class="vk-icons">   
-                            <a class="block-icons-item" href="#">
+                                <i class="fab fa-telegram"></i></a>                       
+                         
+                            <a class=" vk-icons block-icons-item" href="#">
                                 <i class="fab fa-vk"></i></a>
-                        </div>   
-                        <div class="facebook-icons"> 
-                            <a class="block-icons-item" href="#">
+                        
+                        
+                            <a class="facebook-icons block-icons-item" href="#">
                                 <i class="fab fa-facebook-f"></i></a>   
-                        </div>      
+                            
                     </nav>
-                    <p>bek-elena@yandex.ru</p>
+                    <a class="email" href="mailto:bek-elena@yandex.ru">bek-elena@yandex.ru</a>
+                   
                 </div>
             </div> 
         </div>  
-    </header>    
+    </header>
+     <section class="portfolio" id="portfolio">
+         <div class="container">
+            <div class="title-2"><span class="colortext">Портфолио</span></div> 
+            <div class="portfolio-card">
+                <div class="portfolio-card-toggle">
+                    <button class="portfolio-block-toggle__item control-active" data-filter="all">Все работы</button>
+                    <button class="portfolio-block-toggle__item" data-filter=".boots">Bootstrap</button>
+                    <button class="portfolio-block-toggle__item" data-filter=".wp">WordPress</button>
+                    <button class="portfolio-block-toggle__item" data-filter=".frontend">Frontend</button>
+                </div>
+            </div>
+
+            <div class="portfolio-card__content">
+                <div id="portfolio-projects">
+                    <a class="portfolio-card__item portfolio-card__item--big mix boots" href="project-page.html">
+                        <div class="portfolio-card__poster"><img src="img/portfolio/work1.jpg" alt="portfolio"></div>
+                        <div class="portfolio-card__descpip">
+                            <h4 class="title-4 portfolio-card__descpip-title">Верстка &ldquo;Форест Тревел&rdquo;</h4>
+                            <p class="portfolio-card__descpip-details">Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card__item portfolio-card__item--big mix wp" href="#!">
+                        <div class="portfolio-card__poster"><img src="img/portfolio/work2.jpg" alt="portfolio"></div>
+                        <div class="portfolio-card__descpip">
+                            <h4 class="title-4 portfolio-card__descpip-title">Сайт для коворкинга &ldquo;Мечта&rdquo;</h4>
+                            <p class="portfolio-card__descpip-details">Верстка лендинга.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card__item mix boots wp" href="#!">
+                        <div class="portfolio-card__poster"><img src="img/portfolio/work3.jpg" alt="portfolio"></div>
+                        <div class="portfolio-card__descpip">
+                            <h4 class="title-4 portfolio-card__descpip-title">Верстка &ldquo;Мир Авто&rdquo;</h4>
+                            <p class="portfolio-card__descpip-details">Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card__item mix frontend" href="#!">
+                        <div class="portfolio-card__poster"><img src="img/portfolio/work4.jpg" alt="portfolio"></div>
+                        <div class="portfolio-card__descpip">
+                            <h4 class="title-4 portfolio-card__descpip-title">Верстка &ldquo;Мир Авто&rdquo;</h4>
+                            <p class="portfolio-card__descpip-details">Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card__item mix wp frontend" href="#!">
+                        <div class="portfolio-card_poster"><img src="img/portfolio/work5.jpg" alt="portfolio"></div>
+                        <div class="portfolio-card__descpip">
+                            <h4 class="title-4 portfolio-card__descpip-title">Верстка &ldquo;Мир Авто&rdquo;</h4>
+                            <p class="portfolio-card__descpip-details">Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                </div>    
+                <button class="section-link page-link__mobile" id="show-all-works">Смотреть все работы</button>
+               
+            </div>
+             
+         </div>
+     </section>   
     
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <!--<script src="libs/bootstrap/bootstrap.min.js"></script>-->
+    <script src="libs/mixitup3/mixitup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

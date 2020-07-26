@@ -24,4 +24,13 @@ $(document).ready(function () {
         mobileMenuToggle.classList.remove('active');
         overlay.classList.remove('active');
     })
+
+    //-фильтрация проектов
+    let containerEl = document.querySelector('#portfolio-projects');
+
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+        }
+    });
 })
