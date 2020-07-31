@@ -15,16 +15,17 @@ $(document).ready(function () {
     const overlay = document.querySelector('#overlay');
 
     mobileMenuToggle.addEventListener('click', function() {
-        mobMenu.classList.toggle('active');
+        mobMenu.classList.toggle('active'); 
         this.classList.toggle('active');
         overlay.classList.toggle('active');
-    });
+    });      
+    
     window.addEventListener('resize', function(){
         mobMenu.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
         overlay.classList.remove('active');
-    })
-
+    });
+})
     //-фильтрация проектов
     let containerEl = document.querySelector('#portfolio-projects');
 
@@ -32,5 +33,35 @@ $(document).ready(function () {
         classNames: {
             block: ""
         }
-    });
+    })
+
+
+$('#contacts-form').validate({
+    rules:{
+        email: {
+            required: true,
+            email: true
+        },
+        theme: {
+            required: true
+        },
+        message: {
+            required: true
+        }
+    },
+    messages: {
+        email: {
+            required: 'Введите email',
+            email: 'Отсутствует символ @ '
+        },
+        theme: {
+            required: 'Введите тему письма'
+        },
+        message: {
+            required: 'Введите сообщение'
+        }
+    },
+    submitHandler: function (form) {
+        ajaxFormSubm ();
+    }
 })

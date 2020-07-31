@@ -12,12 +12,13 @@
 <body>
     <div id="overlay"></div>
     <header class="header">
+        <!--top-menu-->
         <div class="header-nav">
             <a class="logo" href="index.html"><span class="colortext">ЕБ</span> </a>
             <nav class="header-menu">
                 <a class="header-link" href="#">Главная</a>
                 <a class="header-link" href="#">Работы</a>
-                <a class="header-link" href="#">Контакты</a>
+                <a class="header-link" href="#contacts">Контакты</a>
             </nav>
             <nav class="header-icons">
                 <a class="icons-item" href="#">
@@ -28,7 +29,9 @@
                     <i class="fab fa-vk"></i></a>
             </nav>
             <div class="toggle-menu"><span></span></div>
-        </div>    
+        </div>   
+        <!--//top-menu--> 
+        <!--header-content-->
         <div class="container">
             <div class="header-content">
 
@@ -43,7 +46,7 @@
                     <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
                     <form class="header-button">
                         <a href="#what" class="page-button button-color">Познакомиться</a> 
-                        <a href="#cont" class="page-button button-press">Контакты</a> 
+                        <a href="#contacts" class="page-button button-press">Контакты</a> 
                     </form>
                 </div>
              </div>
@@ -89,7 +92,9 @@
                 </div>
             </div> 
         </div>  
+        <!--//header-content-->
     </header>
+    <!--section portfolio-->
      <section class="portfolio" id="portfolio">
          <div class="container">
             <div class="title-2"><span class="colortext">Портфолио</span></div> 
@@ -146,10 +151,11 @@
             </div>             
          </div>
      </section>   
-    
+    <!--//section portfolio-->
+    <!--section how-work-->
      <section class="how-work">
         <div class="container">
-            <div class="title-2 smaller"><span class="colortext">Как я работаю</span></div>
+            <div class="heading"><span class="colortext">Как я работаю</span></div>
             <div class="how-work-stages">
                 <div class="how-work-stages__item">
                     <div class="how-work-stages__item-icon"><img src="img/how-work/icon1.png" alt="icon"></div>
@@ -194,12 +200,79 @@
             </div>
         </div>
      </section>
+     <!--//section how work-->
+     <!--section feedback-->
+     <section class="feedback" id="contacts">         
+        <div class="container">
+            <div class="title-2"><span class="colortext">Контакты</span></div>            
+            <div class="freedback-inner">    
+                <div class="freedback-inner__contacts">
+                    <p class="freedback-inner__contacts-text">Если вы ищете специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом - напишите мне.</p>
+                    <div class="freedback-inner__contacts-block">
+                        <div class="freedback-inner__contacts-block-item">
+                            <p class="contact-type">Email</p><a class="email-address" href="mailto:bek-elena@yandex.ru">bek-elena@yandex.ru</a>
+                        </div>
+                        <div class="freedback-inner__contacts-block-item">
+                            <p class="contact-type">Skype</p><a class="skype-address" href="skype:malena8859">elena.bekasheva</a>
+                        </div>
+                        <div class="freedback-inner__contacts-block-item">
+                            <p class="contact-type">Телефон</p><a class="telephone-address" href="tel:89158169537">+7 (915) 816-95-37</a>
+                        </div>
+                        <div class="freedback-inner__contacts-block-item">
+                            <p class="contact-type">Адрес</p>
+                            <p class="home-address" href="#">Россия, Иваново</p>
+                        </div>
+                         
+                        <nav class="connection__icons">                                             
+                            <a class="block-icons git" href="#">
+                                <i class="fab fa-github"></i></a>               
+                            <a class="block-icons telegram" href="#">
+                                <i class="fab fa-telegram"></i></a> 
+                            <a class=" vk-icons block-icons-item" href="#">
+                                <i class="fab fa-vk"></i></a>                 
+                            <a class="facebook-icons block-icons-item" href="#">
+                                <i class="fab fa-facebook-f"></i></a> 
+                       </nav> 
+                    </div> 
+                </div>     
+                     
+                <div class="feedback-inner__form">
+                    <form class="contacts-form" action="" id="contacts-form">
+                        <div class="form-row">
+                            <input class="form-row__input" type="text" name="email">
+                            <span class="placeholder email">Ваш email</span>
+                        </div>
+                        <div class="form-row">
+                            <input class="form-row__input input-theme" type="text" name="theme">
+                            <span class="placeholder theme">Тема письма</span>
+                        </div>
+                        <div class="form-row">
+                            <textarea class="form-row__input form-row__input--textarea" type="text" name="message" rows="3"></textarea>
+                            <span class="placeholder message">Сообщение</span>                            
+                        </div>
+                        <input class="page-button button-color submit" type="submit" value="Отправить">
+                    </form>
 
-
+                </div>        
+            </div>
+        </div>
+        <div class="freedback-inner__img"><img src="img/contacts-bg.png" alt="image"></div>
+     </section>               
+     <!--//section feedback-->         
+     <!--footer+-->      
+     <footer class="footer">
+         <div class="container">
+             <p class="footer-copyright">&copy; 2020 Елана Бекашева</p>
+             <p>Веб-разработчик из Иваново, занима&shy;юсь версткой и созданием сайтов.</p>
+             <p>Этот сайт сделала в рамках прохождения обучения по верстке на курсах от <a class="footer-link" href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+         </div>
+     </footer>
+      <!--//footer+-->         
 
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <!--<script src="libs/bootstrap/bootstrap.min.js"></script>-->
     <script src="libs/mixitup3/mixitup.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
