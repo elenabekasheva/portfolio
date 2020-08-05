@@ -29,8 +29,8 @@
         display: block;        
         content: "";
         position: absolute;    
-        top: 32%;
-        left: -8%;              
+        top: 31%;
+        left: -22%;              
     }
 }
 .title-2 {
@@ -55,7 +55,7 @@
 }
 
 .freedback-inner__contacts {
-    margin-bottom: 50px;
+    
     @media (min-width: 768px) {
         margin-bottom: 0;
 
@@ -79,8 +79,8 @@
         margin-bottom: 40px;       
     }
 }
-.reedback-inner__contacts-block {
-    display: flex;    
+.freedback-inner__contacts-block {
+    display: block;
 }
 .freedback-inner__contacts-block-item {
         margin-bottom: 20px;
@@ -90,10 +90,8 @@
     @media (min-width: 768px) {
         
     }
-    @media (min-width: 1200px) {
-        display: flex;
-        justify-content: space-between;
-        
+    @media (min-width: 1200px) {      
+       display: flex;
         margin-bottom: 20px;
         &:nth-last-child(2){
             margin-bottom: 50px;
@@ -104,6 +102,8 @@
     font-weight: 700;
     @media (min-width: 1200px) {
         font-size: 20px;
+        width: 100px;
+        margin-right: 80px;
     }
 }
 .email-address, .skype-address {    
@@ -115,11 +115,13 @@
         
     }
 }
-.skype-address,  .home-address,  .telephone-addres {
-    @media (min-width: 1200px) {
-        padding-right: 50px;
+@media (min-width: 1200px) {
+    .skype-address,
+    .home-address,
+    .telephone-addres {
+      
     }
- }             
+  }       
   
 .telephone-address, .home-address {
     font-weight: 500;
@@ -219,8 +221,7 @@
     color: red;
     font-size: 14px;
 }   
- .submit {        
-    position: absolute;   
+ .submit {      
     height: 60px;
     border-radius: 30px;
     line-height: 60px;
@@ -240,16 +241,4 @@
            
         }  
 }
-.button-color {
-    @media (min-width: 1200px) {
-        position: absolute;
-      
-    }
-}
-.footer {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-color: #333333;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.5);
-}
+
