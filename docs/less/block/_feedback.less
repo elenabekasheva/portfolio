@@ -55,9 +55,17 @@
 }
 
 .feedback-inner__contacts {
+     margin-left: auto;
+     margin-right: auto;
+    @media (min-width: 424px) {
+        max-width: 500px;       
+    }
     
     @media (min-width: 768px) {
+        width: 48%;
         margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
 
     }
     @media (min-width: 1200px) {       
@@ -134,9 +142,8 @@
 }  
 .feedback-inner__form {
     display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    flex-direction: column;   
+    padding: 40px 15px;
     width: 100%;
     max-width: 400px;   
     height: 545px;
@@ -147,7 +154,7 @@
     box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.004);
     
     @media (min-width: 768px) {        
-        width: 100%;
+        width: 48%;
         margin-right: 0;
         margin-left: 0;
         padding-right: 30px;

@@ -13,12 +13,22 @@ $(document).ready(function () {
     const mobileMenuToggle = document.querySelector('.toggle-menu');
     const mobMenu = document.querySelector('.header-menu');
     const overlay = document.querySelector('#overlay');
+    const bodyEl = document.body 
 
     mobileMenuToggle.addEventListener('click', function() {
         mobMenu.classList.toggle('active'); 
         this.classList.toggle('active');
         overlay.classList.toggle('active');
-    });      
+        bodyEl.classList.toggle('noscroll');
+    });   
+    // Закрыть моб меню по клику на его пункт меню
+    mobMenu.addEventListener('click', function() {
+        this.classList.remove('active'); 
+        mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
+        bodyEl.classList.remove('noscroll');
+        
+    })
     
     window.addEventListener('resize', function(){
         mobMenu.classList.remove('active');

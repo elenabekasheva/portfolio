@@ -285,9 +285,15 @@ button {
   font-weight: 800;
   color: #000;
 }
+@media (min-width: 424px) {
+  .header-name {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .header-name {
     font-size: 52px;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
@@ -305,9 +311,15 @@ button {
 .header-desk p {
   font-weight: 500;
 }
+@media (min-width: 424px) {
+  .header-desk p {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .header-desk p {
     width: 340px;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
@@ -404,6 +416,9 @@ button {
 }
 @media (min-width: 768px) {
   .header-details {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -936,23 +951,16 @@ button {
   display: block;
   width: 100%;
   margin-bottom: 40px;
-  max-width: 360px;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
   .portfolio-card__item {
+    max-width: 360px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-  }
-  .portfolio-card__item:last-child {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .portfolio-card__item:last-child {
-    display: block;
   }
 }
 .portfolio-card__item--big {
@@ -1190,6 +1198,16 @@ button {
   max-width: 1005px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 424px) {
+  .how-work-stages {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .how-work-stages {
+    max-width: 1005px;
+  }
 }
 .how-work-stages__item {
   position: relative;
@@ -1464,9 +1482,21 @@ button {
             justify-content: space-between;
   }
 }
+.feedback-inner__contacts {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 424px) {
+  .feedback-inner__contacts {
+    max-width: 500px;
+  }
+}
 @media (min-width: 768px) {
   .feedback-inner__contacts {
+    width: 48%;
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1571,8 +1601,7 @@ button {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
   width: 100%;
   max-width: 400px;
   height: 545px;
@@ -1586,7 +1615,7 @@ button {
 }
 @media (min-width: 768px) {
   .feedback-inner__form {
-    width: 100%;
+    width: 48%;
     margin-right: 0;
     margin-left: 0;
     padding-right: 30px;
